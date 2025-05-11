@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>给妈妈的小礼物</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 音乐图标 -->
+    <div id="musicControl" class="music-icon">♪</div>
+
+    <!-- 主容器 -->
+    <div class="container">
+        <!-- 封面页 -->
+        <div id="cover" class="page active">
+            <div class="cover-bg"></div>
+            <h1 class="title">妈妈<br>节日快乐</h1>
+            <button id="startBtn" class="heart-btn">点击开启~</button>
+        </div>
+
+        <!-- 时间轴页面 -->
+        <div id="timeline" class="page">
+            <div class="timeline-item left">
+                <div class="photo-frame" data-year="2023">
+                    <img src="img/photo1.jpg" alt="第一张的随手而作">
+                    <div class="memory-text">笑意似潺潺溪流，淌出岁月沉淀的优雅与从容</div>
+                </div>
+            </div>
+            <div class="timeline-item left">
+                <div class="photo-frame" data-year="2023">
+                    <img src="img/photo5.jpg" loading="lazy" alt="不经意的笑容">
+                    <div class="memory-text">宛如微风拂过湖面，漾起层层温柔的涟漪</div>
+                </div>
+            </div>
+        
+            
+            <div class="timeline-item right">
+                <div class="photo-frame" data-year="2024">
+                    <img src="img/photo2.jpg" alt="微不足道的谢意">
+                    <div class="memory-text">那画面，满溢着亲情的暖与甜</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 最终祝福 -->
+        <div id="final" class="page">
+            <div class="heart-container">
+                <div class="magic-text">您是世界上最好的妈妈</div>
+                <div class="firework"></div>
+                <div class="firework"></div>
+                <div class="firework"></div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="bgm" src="audio/bgm.mp3" loop></audio>
+    <script src="js/script.js"></script>
+</body>
+</html>
